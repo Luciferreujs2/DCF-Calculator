@@ -1,10 +1,25 @@
-# Automated DCF Valuation Engine
+# 📈 Automated Equity Valuation Engine (DCF)
 
-A financial modeling tool built in Python to determine the intrinsic value of publicly traded companies.
+## 📌 Project Overview
+As a Mechanical Engineering student at IIT Madras, I am trained to model physical systems to predict future performance. I built this tool to apply those same systems-modeling principles to the financial markets. This engine automates the **Discounted Cash Flow (DCF)** analysis, allowing for a data-driven approach to determining the intrinsic value of a company.
 
-### Technical Implementation
-* **Data Sourcing**: Uses `yfinance` to extract real-time Free Cash Flow from company balance sheets.
-* **Mathematical Model**: Implements a 5-year growth projection and discounts cash flows back to present value using a 10% WACC (Weighted Average Cost of Capital).
+## ⚙️ How It Works
+The engine follows a rigorous quantitative process to value a stock:
+* **Real-Time Data Extraction:** Integrates with the `yfinance` API to pull the latest Free Cash Flow (FCF), total debt, and cash reserves directly from financial statements.
+* **Projections:** Models a 5-year growth trajectory based on historical performance and terminal value.
+* **Discounting Logic:** Applies the **Time Value of Money** principle by discounting future cash flows back to the present using a 10% WACC (Weighted Average Cost of Capital).
+* **Margin of Safety:** Compares the calculated "Intrinsic Value" against the current "Market Price" to identify undervalued opportunities.
 
-### Why I Built This
-Coming from a Mechanical Engineering background at IIT Madras, I wanted to apply system modeling principles—where we predict future outputs based on current efficiency—to the world of finance.
+## 🛠 Technical Features
+* **Financial Automation:** Replaced manual spreadsheet entry with a Python-based automation layer.
+* **API Integration:** Leverages the `yfinance` library for seamless data sourcing.
+* **Algorithmic Modeling:** Uses mathematical loops to calculate cumulative present value and terminal growth.
+* **Systematic Analysis:** Built with modular functions to allow for easy adjustment of WACC and growth rate assumptions.
+
+[Image of a Discounted Cash Flow (DCF) model diagram showing future cash flows discounted to present value]
+
+## 🚀 Getting Started
+### Prerequisites
+You need Python 3.x and the `yfinance` library installed.
+```bash
+pip install yfinance
