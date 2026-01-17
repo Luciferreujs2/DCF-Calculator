@@ -16,10 +16,4 @@ The engine follows a rigorous quantitative process to value a stock:
 * **Algorithmic Modeling:** Uses mathematical loops to calculate cumulative present value and terminal growth.
 * **Systematic Analysis:** Built with modular functions to allow for easy adjustment of WACC and growth rate assumptions.
 
-[Image of a Discounted Cash Flow (DCF) model diagram showing future cash flows discounted to present value]
 
-## 🚀 Getting Started
-### Prerequisites
-You need Python 3.x and the `yfinance` library installed.
-```bash
-pip install yfinance
